@@ -62,7 +62,7 @@ def cb_admin_check(func: Callable) -> Callable:
         if cb.from_user.id in admemes:
             return await func(client, cb)
         else:
-            await cb.answer("You ain't allowed!", show_alert=True)
+            await cb.answer("İcazə vermirəm :/\n@SirinCayBoss", show_alert=True)
             return
 
     return decorator
@@ -164,13 +164,13 @@ async def playlist(client, message):
 def updated_stats(chat, queue, vol=100):
     if chat.id in callsmusic.pytgcalls.active_calls:
         # if chat.id in active_chats:
-        stats = "Settings of **{}**".format(chat.title)
+        stats = "Ayarları**{}**".format(chat.title)
         if len(que) > 0:
             stats += "\n\n"
-            stats += "Volume : {}%\n".format(vol)
-            stats += "Songs in queue : `{}`\n".format(len(que))
-            stats += "Now Playing : **{}**\n".format(queue[0][0])
-            stats += "Requested by : {}".format(queue[0][1].mention)
+            stats += "Səs : {}%\n".format(vol)
+            stats += "Növbədə mahnılar : `{}`\n".format(len(que))
+            stats += "İndi oxuyur : **{}**\n".format(queue[0][0])
+            stats += "İstədi : {}".format(queue[0][1].mention)
     else:
         stats = None
     return stats
@@ -192,7 +192,7 @@ def r_ply(type_):
             [
                 InlineKeyboardButton("Playlist 📖", "playlist"),
             ],
-            [InlineKeyboardButton("❌ Close", "cls")],
+            [InlineKeyboardButton("❌ Bağla", "cls")],
         ]
     )
     return mar
@@ -205,7 +205,7 @@ async def ee(client, message):
     if stats:
         await message.reply(stats)
     else:
-        await message.reply("No VC instances running in this chat")
+        await message.reply("Bu söhbətdə çalışan VC nümunəsi yoxdur")
 
 
 @Client.on_message(filters.command("player") & filters.group & ~filters.edited)
@@ -224,7 +224,7 @@ async def settings(client, message):
         else:
             await message.reply(stats, reply_markup=r_ply("play"))
     else:
-        await message.reply("No VC instances running in this chat")
+        await message.reply("Bu söhbətdə çalışan VC nümunəsi yoxdur")
 
 
 @Client.on_callback_query(filters.regex(pattern=r"^(playlist)$"))
@@ -403,7 +403,7 @@ async def m_cb(b, cb):
 @Client.on_message(command("play") & other_filters)
 async def play(_, message: Message):
     global que
-    lel = await message.reply("🔄 **İşə düşür**")
+    lel = await message.reply("🔄 **Proses Gedir**")
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
 
@@ -438,7 +438,7 @@ async def play(_, message: Message):
                         message.chat.id, "Səslidə musiqi oynamaq üçün bu qrupa qoşuldum"
                     )
                     await lel.edit(
-                        "<b>Asistan Grupa Qatıldı</b>",
+                        "<b>Asistan Grupa Qatıldı!\n@RythMusiqiAze 🔥</b>",
                     )
 
                 except UserAlreadyParticipant:
@@ -447,14 +447,14 @@ async def play(_, message: Message):
                     # print(e)
                     await lel.edit(
                        f"<b>🔴 Flood Xətası 🔴 \nİstifadəçi {user.first_name} Grupunuza qatıla bilmədi bunu səbəbi Asistan bir çox qurupda olması və ya adminlərdən biri onu grupda banladı"
-                        "\n\nVə ya @GroupMuzikSup support grupundan dəstək istəyin</b>",
+                        "\n\nVə ya @AzRobotGroup support grupundan dəstək istəyin</b>",
                     )
     try:
         await USER.get_chat(chid)
         # lmoa = await client.get_chat_member(chid,wew)
     except:
         await lel.edit(
-            f"<i>{user.first_name} Bu grupda yoxdu!\nAdmin heyətindən 1 nəfər mahnı qoşmazdan əvvəl /play əmrini boş olaraq istifadə edin\n{user.first_name} Bu halda da grupa qatılmazsa Onu əl ilə əlavə edin və ya dəstək grupuna bildirin</i>\nDəstək grupu: @GroupMuzikSup</i>"
+            f"<i>{user.first_name} Bu grupda yoxdu!\nAdmin heyətindən 1 nəfər mahnı qoşmazdan əvvəl /play əmrini boş olaraq istifadə edin\n{user.first_name} Bu halda da grupa qatılmazsa Onu əl ilə əlavə edin və ya dəstək grupuna bildirin</i>\nDəstək grupu: @AzRobotGroup</i>"
         )
         return
     message.from_user.id
@@ -587,7 +587,7 @@ async def deezer(client: Client, message_: Message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name = "GroupMuzikAz"
+        user.first_name = "RythmMusiqiAze"
     usar = user
     wew = usar.id
     try:
