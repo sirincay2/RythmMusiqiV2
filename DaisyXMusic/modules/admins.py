@@ -48,7 +48,7 @@ async def pause(_, message: Message):
     if (chat_id not in callsmusic.pytgcalls.active_calls) or (
         callsmusic.pytgcalls.active_calls[chat_id] == "paused"
     ):
-        await message.reply_text("❗ Nothing is playing!")
+        await message.reply_text("❗ Hazırda mahnı oxumur")
     else:
         callsmusic.pytgcalls.pause_stream(chat_id)
         await message.reply_text("▶️ Mahnıya ara verildi!")
@@ -74,7 +74,7 @@ async def resume(_, message: Message):
 async def stop(_, message: Message):
     chat_id = get_chat_id(message.chat)
     if chat_id not in callsmusic.pytgcalls.active_calls:
-        await message.reply_text("❗ Hazırda mahnı oxumur!")
+        await message.reply_text("❗ Hazırda mahnı oxumur")
     else:
         try:
             callsmusic.queues.clear(chat_id)
