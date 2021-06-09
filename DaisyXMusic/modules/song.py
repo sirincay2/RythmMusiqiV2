@@ -70,7 +70,7 @@ def song(client, message):
         m.edit("❌ Heç bir şey tapılmadı.\n\nBaşqa bir açar ad ilə sınayın , bəlkə də düzgün yazmamısız.")
         print(str(e))
         return
-    m.edit("Downloading the song ")
+    m.edit("Mahnı Yüklenir....")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
