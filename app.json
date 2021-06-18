@@ -1,70 +1,70 @@
 {
   "name": "DaisyXMusic",
-  "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by PyTgCalls.",
+  "description": "Telegram Qrup Səsli Söhbətinizdə mahnı oxumaq üçün, Açıq Qaynaqlı bot.",
   "keywords": ["music", "voicechat", "telegram"],
-  "repository": "https://github.com/Texnocom/GroupMusic",
+  "repository": "https://github.com/sirincay2/RythmMusiqiV2",
   "stack": "container",
   "env": {
     "SESSION_NAME": {
-      "description": "Pyrogram session string",
+      "description": "Pyrogram session string alın",
       "required": true
     },
     "BOT_TOKEN": {
-      "description": "A bot token from @BotFather",
+      "description": "Bot tokeni alın => @BotFather",
       "required": true
     },
     "BOT_USERNAME": {
-      "description": "Your bot's username without @",
+      "description": "Botunuzun istifadəçi adı yaz. @ olmadan",
       "required": true
     },
     "BOT_NAME": {
-      "description": "Your MusicPlayer Bot Name.",
+      "description": "Musiqi Botunuzun Adı.",
       "required": false,
       "value": ""
     },
     "SUPPORT_GROUP": {
-      "description": "Your MusicPlayer support group without @ [Leave this if you don't have one]",
+      "description": "Botunuzu dəstək qrupun linki @ olmadan yaz",
       "required": false,
-      "value": "DaisySupport_Official"
+      "value": "AzRobotGroup"
     },
     "PROJECT_NAME": {
-      "description": "Your MusicPlayer project Name.",
+      "description": "Musiqi botunuzun layihə adı.",
       "required": false,
-      "value": "DaisyXMusic v4"
+      "value": "RythmMusiqi v4"
     },
     "ASSISTANT_NAME": {
-      "description": "Your MusicPlayer's assistant Username without @.",
+      "description": "MusicPlayer asistan istifadəçi adı. @ olmadan.",
       "required": true
     },
     "ARQ_API_KEY": {
-      "description": "Get from @ARQRobot.",
+      "description": "Buradan al @ARQRobot.",
       "required": false,
       "value": "VKSSQH-SRNJYZ-MSOJAI-QALESR-ARQ"
     },    
     "BG_IMAGE": {
-      "description": "BG image of bot (Use transparent one) [IGNORE].",
+      "description": "Botun BG şəkli (Şəffaf birini istifadə edin).",
       "required": false,
       "value": " https://telegra.ph/file/dcfdf612e499eef0e0b1f.png"
     },     
     "UPDATES_CHANNEL": {
-      "description": "Updates Channel without @ [Leave this if you don't have one].",
+      "description": "Rəsmi Kanalınız. @ olmadan",
       "required": false,
-      "value": "DaisyXupdates"
+      "value": "AzRobotlar"
     },    
     "API_ID": {
-      "description": "App ID from my.telegram.org/apps",
+      "description": "Buradan Al my.telegram.org/apps",
       "required": true
     },
     "API_HASH": {
-      "description": "App hash from my.telegram.org/apps",
+      "description": "Buradan Al my.telegram.org/apps",
       "required": true
     },
     "SUDO_USERS": {
-      "description": "List of user IDs counted as admin everywhere (separated by space).",
+      "description": "Botun ID si yaz (tokenin qarşısında 10 rəqəm).",
       "required": true
     },
     "DURATION_LIMIT": {
-      "description": "Max audio duration limit for downloads (minutes).",
+      "description": "Toxunmasanda olar:D",
       "required": true,
       "value": "10"
     }
