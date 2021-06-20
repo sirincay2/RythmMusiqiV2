@@ -1,4 +1,4 @@
-<h1 align="centre">RythMusiqi V2.0 🎵</h1>
+<h1 align="centre">RythmMusiqi V2.0 🎵</h1>
 
 ### Telegram Qruplarında və Kanal Səsli Söhbetlerinde musiqi oxuya bilən bir bot
 #### Sahiblə Əlaqə [@HusnuEhedov](t.me/husnuehedov)
