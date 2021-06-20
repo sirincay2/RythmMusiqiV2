@@ -12,7 +12,7 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/sirincay2/RythmMusiqiV2)
 
-String üçün botdan istifadı edin [@DaisyXStringGeneratorBot](https://t.me/@genStr_robot)
+String üçün botdan istifadı edin [@genStr_robot](https://t.me/@genStr_robot)
 
 ### ⚔ Servere bağlama
 ```sh
