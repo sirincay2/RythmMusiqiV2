@@ -5,7 +5,7 @@
 ### Available on telegram as [@DaisyXbot](https://t.me/GroupMuzik)
 
 <p align="center">
-  <img src="https://telegra.ph/file/c47ad579dad8804755965.png">
+  <img src="https://telegra.ph/file/831231d8522f9a1c0d04d.jpg">
 </p>
 
 <h2> Features 🔥 </h2>
