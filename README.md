@@ -1,29 +1,14 @@
 <h1 align="centre">DAISYXMUSIC V4.0 🎵</h1>
 
-### A bot that can play music on Telegram Group and Channel Voice Chats
-#### POWERED BY [PYTGCALLS](https://github.com/pytgcalls/pytgcalls)
-### Available on telegram as [@DaisyXbot](https://t.me/GroupMuzik)
+### Telegram Qruplarında və Kanal Səsli Söhbetlerinde musiqi oxuya bilən bir bot
+#### Sahiblə Əlaqə [@HusnuEhedov](t.me/husnuehedov)
 
 <p align="center">
   <img src="https://telegra.ph/file/831231d8522f9a1c0d04d.jpg">
 </p>
 
-<h2> Features 🔥 </h2>
 
-- Thumbnail Support
-- Playlist Support
-- Current playback support
-- Showing track names when skipping
-- Zero downtime, Fully Stable
-- DEEZER,YOUTUBE & SAAVN PLAYBACK SUPPORTED
-- Settings panel
-- Control with buttons
-- Userbot auto join
-- Channel Music Play
-
-## 🚀 Deployment
-
-### 💜 Heroku
+### 💜 Heroku Deploy
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/sirincay2/RythmMusiqiV2)
 
