@@ -4,7 +4,7 @@
 #### Sahiblə Əlaqə [@HusnuEhedov](t.me/husnuehedov)
 
 <p align="center">
-  <img src="https://telegra.ph/file/831231d8522f9a1c0d04d.jpg">
+  <a href="https:t.me/bulmaca"><img src="https://telegra.ph/file/831231d8522f9a1c0d04d.jpg">
 </p>
 
 
